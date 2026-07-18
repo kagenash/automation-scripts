@@ -1,3 +1,5 @@
+🇧🇷 **Português** | 🇺🇸 [English](README.en.md)
+
 # automation-scripts
 
 Scripts de automação para manutenção Linux, recuperação de PostgreSQL, otimização Windows e configuração SSH — Bash & PowerShell.
