@@ -1,6 +1,6 @@
 # automation-scripts
 
-Automation scripts for Linux maintenance, PostgreSQL recovery, Windows optimization and SSH setup — Bash & PowerShell.
+Scripts de automação para manutenção Linux, recuperação de PostgreSQL, otimização Windows e configuração SSH — Bash & PowerShell.
 
 ## Scripts
 
@@ -16,6 +16,14 @@ Automation scripts for Linux maintenance, PostgreSQL recovery, Windows optimizat
 
 - **Bash** — scripts Linux com `set -euo pipefail`, readonly globals e reversibilidade total
 - **PowerShell** — automação Windows com GUI nativa, Runspaces e manipulação de registro
+
+## Testes
+
+Os scripts atuam sobre estado de sistema (kernel, serviços, banco de dados, registro) e não são unit-testáveis no sentido tradicional. A validação automatizada aqui é de **sintaxe/parse**: garante que nenhum script tenha erro de sintaxe antes de ser distribuído.
+
+```powershell
+pwsh ./tests/test_syntax.ps1
+```
 
 ## Estrutura
 
@@ -36,6 +44,8 @@ automation-scripts/
 ├── ssh-setup/
 │   ├── ssh-setup.ps1
 │   └── README.md
+├── tests/
+│   └── test_syntax.ps1
 ├── LICENSE
 └── README.md
 ```
