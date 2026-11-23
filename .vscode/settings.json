@@ -1,0 +1,58 @@
+{
+    // ---- Geral ----
+    "files.encoding": "utf8",
+    "files.trimTrailingWhitespace": true,
+    "files.insertFinalNewline": true,
+    "files.trimFinalNewlines": true,
+    "editor.renderWhitespace": "boundary",
+    "editor.rulers": [120],
+    "editor.formatOnSave": false,
+    "files.exclude": {
+        "**/saida": true,
+        "**/exports": true
+    },
+    "search.exclude": {
+        "**/*.log": true
+    },
+
+    // ---- PowerShell (Windows PowerShell 5.1 precisa de BOM para acentos) ----
+    "[powershell]": {
+        "files.encoding": "utf8bom",
+        "files.eol": "\r\n",
+        "editor.tabSize": 4,
+        "editor.insertSpaces": true,
+        "editor.defaultFormatter": "ms-vscode.powershell"
+    },
+    "powershell.codeFormatting.preset": "OTBS",
+    "powershell.codeFormatting.useCorrectCasing": true,
+    "powershell.scriptAnalysis.enable": true,
+    "powershell.integratedConsole.showOnStartup": false,
+    "powershell.promptToUpdatePowerShell": false,
+
+    // ---- Shell (roda em Linux: LF obrigatório) ----
+    "[shellscript]": {
+        "files.encoding": "utf8",
+        "files.eol": "\n",
+        "editor.tabSize": 4,
+        "editor.insertSpaces": true,
+        "editor.defaultFormatter": "foxundermoon.shell-format"
+    },
+    "shellcheck.enable": true,
+    "shellcheck.run": "onType",
+
+    // ---- SQL / CSV / Markdown ----
+    "[sql]": { "files.eol": "\n", "editor.tabSize": 4 },
+    "[csv]": { "files.encoding": "utf8bom", "files.trimTrailingWhitespace": false },
+    "[markdown]": {
+        "files.trimTrailingWhitespace": false,
+        "editor.wordWrap": "on"
+    },
+    "cSpell.language": "en,pt-BR",
+
+    // ---- Terminal: PowerShell padrão, Git Bash disponível ----
+    "terminal.integrated.defaultProfile.windows": "PowerShell",
+
+    // ---- Git ----
+    "git.autofetch": true,
+    "git.confirmSync": false
+}

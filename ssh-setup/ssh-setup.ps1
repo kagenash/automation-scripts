@@ -1,4 +1,4 @@
-# 1. Garante que a pasta .ssh existe
+﻿# 1. Garante que a pasta .ssh existe
 $sshPath = "$HOME\.ssh"
 if (!(Test-Path $sshPath)) {
     New-Item -ItemType Directory -Path $sshPath | Out-Null

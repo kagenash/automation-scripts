@@ -1,4 +1,4 @@
-<#
+﻿<#
 Valida a sintaxe de todos os scripts do repositório sem executá-los:
 - .ps1 -> parseados via AST do próprio PowerShell (sem dependências externas)
 - .sh  -> validados com `bash -n` (checagem de sintaxe, sem execução)
