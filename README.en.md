@@ -2,7 +2,7 @@
 
 # automation-scripts
 
-Automation scripts for Linux maintenance, PostgreSQL recovery, Windows optimization and SSH setup — Bash & PowerShell.
+Automation scripts for Linux maintenance, PostgreSQL recovery, Windows optimization, SSH setup and ITSM (Cherwell) — Bash & PowerShell.
 
 ## Scripts
 
@@ -13,11 +13,12 @@ Automation scripts for Linux maintenance, PostgreSQL recovery, Windows optimizat
 | [`windows-maintenance.ps1`](windows-maintenance/windows-maintenance.ps1) | Deep Windows maintenance with 28 automated steps | [README](windows-maintenance/README.md) |
 | [`solid-mass-deploy.ps1`](mass-deploy/solid-mass-deploy.ps1) | Mass SSH deploy with a GUI and parallel execution via Runspaces | [README](mass-deploy/README.md) |
 | [`ssh-setup.ps1`](ssh-setup/ssh-setup.ps1) | Automated SSH environment setup on Windows with ProxyJump | [README](ssh-setup/README.md) |
+| [`cherwell-automation/`](cherwell-automation/) | Cherwell Service Management kit: weekly report with e-mail, reply templates, host check and REST API | [README](cherwell-automation/README.md) |
 
 ## Stack
 
 - **Bash** — Linux scripts with `set -euo pipefail`, readonly globals and full reversibility
-- **PowerShell** — Windows automation with native GUI, Runspaces and registry manipulation
+- **PowerShell** — Windows automation with native GUI, Runspaces, registry manipulation, REST API and Outlook via COM
 
 ## Tests
 
@@ -45,6 +46,15 @@ automation-scripts/
 │   └── README.md
 ├── ssh-setup/
 │   ├── ssh-setup.ps1
+│   └── README.md
+├── cherwell-automation/
+│   ├── exemplos/
+│   │   └── incidentes_exemplo.csv
+│   ├── cherwell-api-export.ps1
+│   ├── cherwell-bridge-test.ps1
+│   ├── cherwell-host-check.ps1
+│   ├── cherwell-reply-template.ps1
+│   ├── cherwell-weekly-report.ps1
 │   └── README.md
 ├── tests/
 │   └── test_syntax.ps1
