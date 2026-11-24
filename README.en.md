@@ -25,7 +25,8 @@ Automation scripts for Linux maintenance, PostgreSQL recovery, Windows optimizat
 These scripts act on system state (kernel, services, database, registry) and aren't unit-testable in the traditional sense. The automated check here is **syntax/parse validation**: it guarantees no script has a syntax error before being distributed.
 
 ```powershell
-pwsh ./tests/test_syntax.ps1
+powershell -NoProfile -ExecutionPolicy Bypass -File .\tests\test_syntax.ps1   # Windows PowerShell 5.1
+pwsh -File ./tests/test_syntax.ps1                                          # or PowerShell 7+
 ```
 
 ## Structure

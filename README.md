@@ -25,7 +25,8 @@ Scripts de automação para manutenção Linux, recuperação de PostgreSQL, oti
 Os scripts atuam sobre estado de sistema (kernel, serviços, banco de dados, registro) e não são unit-testáveis no sentido tradicional. A validação automatizada aqui é de **sintaxe/parse**: garante que nenhum script tenha erro de sintaxe antes de ser distribuído.
 
 ```powershell
-pwsh ./tests/test_syntax.ps1
+powershell -NoProfile -ExecutionPolicy Bypass -File .\tests\test_syntax.ps1   # Windows PowerShell 5.1
+pwsh -File ./tests/test_syntax.ps1                                          # ou PowerShell 7+
 ```
 
 ## Estrutura
