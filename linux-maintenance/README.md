@@ -1,3 +1,5 @@
+🇧🇷 **Português** | 🇺🇸 [English](README.en.md)
+
 # orl-linux-maintenance.sh
 
 Script de manutenção e otimização automatizada para sistemas Linux, com foco em performance, segurança e reversibilidade total.
@@ -46,3 +48,7 @@ rm -f /etc/udev/rules.d/60-io-schedulers.rules
 - Uso de `set -euo pipefail` para falha imediata em erros
 - Constantes declaradas como `readonly` para evitar mutações acidentais
 - Auto-deleção resolve o path absoluto no início da execução para garantir funcionamento mesmo com mudança de diretório
+
+## Licença
+
+MIT — veja [LICENSE](LICENSE).

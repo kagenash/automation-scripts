@@ -1,3 +1,5 @@
+🇧🇷 **Português** | 🇺🇸 [English](README.en.md)
+
 # ssh-setup.ps1
 
 Script de configuração automatizada de ambiente SSH no Windows, com suporte a ProxyJump para acesso a servidores internos via host intermediário.
@@ -36,3 +38,7 @@ Edite as variáveis no script para ajustar os hosts e IPs ao seu ambiente antes 
 
 - A chave RSA não é sobrescrita se já existir
 - O `ForwardAgent yes` no jump host permite usar a chave local no servidor de destino sem copiá-la
+
+## Licença
+
+MIT — veja [LICENSE](LICENSE).

@@ -4,6 +4,8 @@
     O CSV gerado já sai no formato que o cherwell-weekly-report.ps1 espera (nomes internos dos campos).
 
 .DESCRIPTION
+    ATENÇÃO: script genérico, APENAS PARA TESTE E ESTUDO. Revise e adapte antes de qualquer uso em produção.
+
     Fluxo:
         1. Login (token OAuth2) com Client ID + usuário/senha do Cherwell
         2. Descobre o busObId do Business Object (ex.: Incident)

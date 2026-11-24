@@ -2,6 +2,8 @@
 
 # cherwell-automation
 
+> ⚠️ **Apenas para teste e estudo.** Estes scripts são genéricos e servem para aprender e experimentar integrações com o Cherwell. Não são ferramentas prontas para produção: revise, adapte e teste no seu ambiente antes de qualquer uso real.
+
 Kit de automações em PowerShell para o Cherwell Service Management (CSM): relatório semanal de chamados, respostas padrão, checagem de host e exportação via REST API. Os scripts são chamados por One-Step Actions (ação **Run a Program**) ou rodam sozinhos a partir de um CSV exportado.
 
 ## O que faz

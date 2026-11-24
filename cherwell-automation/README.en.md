@@ -2,6 +2,8 @@
 
 # cherwell-automation
 
+> ⚠️ **For testing and study only.** These scripts are generic and meant for learning and experimenting with Cherwell integrations. They are not production-ready tools: review, adapt and test them in your own environment before any real use.
+
 PowerShell automation kit for Cherwell Service Management (CSM): weekly ticket report, reply templates, host check and REST API export. The scripts are called from One-Step Actions (**Run a Program** action) or run on their own from an exported CSV.
 
 ## What it does

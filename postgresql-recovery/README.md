@@ -1,3 +1,5 @@
+🇧🇷 **Português** | 🇺🇸 [English](README.en.md)
+
 # psql-emergency-recovery.sh
 
 Script de recuperação de emergência para PostgreSQL em ambientes de ponto de venda (PDV), projetado para restaurar a disponibilidade da porta 5432 em segundos com zero tolerância a downtime.
@@ -41,3 +43,7 @@ Este script não altera configurações persistentes do PostgreSQL. Toda interve
 ## Aviso
 
 O uso do `pg_resetwal` descarta transações não commitadas localmente. Em ambientes com replicação segundo a segundo, isso é seguro. Em outros contextos, avalie antes de executar.
+
+## Licença
+
+MIT — veja [LICENSE](LICENSE).

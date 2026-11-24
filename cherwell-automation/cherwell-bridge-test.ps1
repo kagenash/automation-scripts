@@ -3,6 +3,8 @@
     Testa se o Cherwell consegue chamar scripts seus pela ação "Run a Program".
 
 .DESCRIPTION
+    ATENÇÃO: script genérico, APENAS PARA TESTE E ESTUDO. Revise e adapte antes de qualquer uso em produção.
+
     Grava uma linha de log com data/hora, máquina, usuário e o ID do chamado.
     Se a linha aparecer no log depois de rodar a One-Step, a ponte funciona.
 

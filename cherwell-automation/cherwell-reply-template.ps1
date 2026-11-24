@@ -3,6 +3,8 @@
     Monta um texto de resposta padrão com os dados do chamado e copia para a área de transferência.
 
 .DESCRIPTION
+    ATENÇÃO: script genérico, APENAS PARA TESTE E ESTUDO. Revise e adapte antes de qualquer uso em produção.
+
     Chamado pela One-Step via "Run a Program", recebendo os dados por Tokens.
     Depois é só colar (Ctrl+V) no e-mail ou no journal.
 

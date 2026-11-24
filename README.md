@@ -13,7 +13,7 @@ Scripts de automação para manutenção Linux, recuperação de PostgreSQL, oti
 | [`windows-maintenance.ps1`](windows-maintenance/windows-maintenance.ps1) | Manutenção profunda de sistemas Windows com 28 etapas automatizadas | [README](windows-maintenance/README.md) |
 | [`solid-mass-deploy.ps1`](mass-deploy/solid-mass-deploy.ps1) | Deploy em massa via SSH com interface gráfica e execução paralela via Runspaces | [README](mass-deploy/README.md) |
 | [`ssh-setup.ps1`](ssh-setup/ssh-setup.ps1) | Configuração automatizada de ambiente SSH no Windows com ProxyJump | [README](ssh-setup/README.md) |
-| [`cherwell-automation/`](cherwell-automation/) | Kit para Cherwell Service Management: relatório semanal com e-mail, respostas padrão, checagem de host e REST API | [README](cherwell-automation/README.md) |
+| [`cherwell-automation/`](cherwell-automation/) | **Apenas teste e estudo.** Kit para Cherwell Service Management: relatório semanal com e-mail, respostas padrão, checagem de host e REST API | [README](cherwell-automation/README.md) |
 
 ## Stack
 
@@ -34,18 +34,28 @@ pwsh ./tests/test_syntax.ps1
 automation-scripts/
 ├── linux-maintenance/
 │   ├── orl-linux-maintenance.sh
+│   ├── LICENSE
+│   ├── README.en.md
 │   └── README.md
 ├── postgresql-recovery/
 │   ├── psql-emergency-recovery.sh
+│   ├── LICENSE
+│   ├── README.en.md
 │   └── README.md
 ├── windows-maintenance/
 │   ├── windows-maintenance.ps1
+│   ├── LICENSE
+│   ├── README.en.md
 │   └── README.md
 ├── mass-deploy/
 │   ├── solid-mass-deploy.ps1
+│   ├── LICENSE
+│   ├── README.en.md
 │   └── README.md
 ├── ssh-setup/
 │   ├── ssh-setup.ps1
+│   ├── LICENSE
+│   ├── README.en.md
 │   └── README.md
 ├── cherwell-automation/
 │   ├── exemplos/
@@ -65,7 +75,7 @@ automation-scripts/
 └── README.md
 ```
 
-Cada pasta é autocontida: script + documentação de uso, requisitos e notas técnicas.
+Cada pasta é autocontida: script, documentação em português e inglês (uso, requisitos e notas técnicas) e LICENSE. Os scripts de `cherwell-automation/` são apenas para teste e estudo.
 
 ## Licença
 

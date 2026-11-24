@@ -1,3 +1,5 @@
+🇧🇷 **Português** | 🇺🇸 [English](README.en.md)
+
 # windows-maintenance.ps1
 
 Script de manutenção profunda e otimização de sistemas Windows, com 28 etapas automatizadas cobrindo desde limpeza de cache até tuning de rede e registro.
@@ -52,3 +54,7 @@ O sistema será reiniciado automaticamente ao final. Salve todo trabalho antes d
 - O script se auto-deleta após a execução via processo `cmd` externo
 - Todas as ações são logadas no terminal com indicação de etapa `[N/28]`
 - SysMain é desativado apenas em HDD — em SSD permanece ativo conforme recomendação da Microsoft
+
+## Licença
+
+MIT — veja [LICENSE](LICENSE).

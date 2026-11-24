@@ -13,7 +13,7 @@ Automation scripts for Linux maintenance, PostgreSQL recovery, Windows optimizat
 | [`windows-maintenance.ps1`](windows-maintenance/windows-maintenance.ps1) | Deep Windows maintenance with 28 automated steps | [README](windows-maintenance/README.md) |
 | [`solid-mass-deploy.ps1`](mass-deploy/solid-mass-deploy.ps1) | Mass SSH deploy with a GUI and parallel execution via Runspaces | [README](mass-deploy/README.md) |
 | [`ssh-setup.ps1`](ssh-setup/ssh-setup.ps1) | Automated SSH environment setup on Windows with ProxyJump | [README](ssh-setup/README.md) |
-| [`cherwell-automation/`](cherwell-automation/) | Cherwell Service Management kit: weekly report with e-mail, reply templates, host check and REST API | [README](cherwell-automation/README.md) |
+| [`cherwell-automation/`](cherwell-automation/) | **Testing and study only.** Cherwell Service Management kit: weekly report with e-mail, reply templates, host check and REST API | [README](cherwell-automation/README.md) |
 
 ## Stack
 
@@ -34,18 +34,28 @@ pwsh ./tests/test_syntax.ps1
 automation-scripts/
 ├── linux-maintenance/
 │   ├── orl-linux-maintenance.sh
+│   ├── LICENSE
+│   ├── README.en.md
 │   └── README.md
 ├── postgresql-recovery/
 │   ├── psql-emergency-recovery.sh
+│   ├── LICENSE
+│   ├── README.en.md
 │   └── README.md
 ├── windows-maintenance/
 │   ├── windows-maintenance.ps1
+│   ├── LICENSE
+│   ├── README.en.md
 │   └── README.md
 ├── mass-deploy/
 │   ├── solid-mass-deploy.ps1
+│   ├── LICENSE
+│   ├── README.en.md
 │   └── README.md
 ├── ssh-setup/
 │   ├── ssh-setup.ps1
+│   ├── LICENSE
+│   ├── README.en.md
 │   └── README.md
 ├── cherwell-automation/
 │   ├── exemplos/
@@ -65,7 +75,7 @@ automation-scripts/
 └── README.md
 ```
 
-Each folder is self-contained: script + usage docs, requirements and technical notes.
+Each folder is self-contained: script, docs in Portuguese and English (usage, requirements and technical notes) and LICENSE. The scripts in `cherwell-automation/` are for testing and study only.
 
 ## License
 

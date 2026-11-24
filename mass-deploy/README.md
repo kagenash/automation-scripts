@@ -1,3 +1,5 @@
+🇧🇷 **Português** | 🇺🇸 [English](README.en.md)
+
 # solid-mass-deploy.ps1
 
 Ferramenta GUI em PowerShell para deploy em massa de comandos via SSH em múltiplos servidores simultaneamente, com execução paralela via Runspaces e interface gráfica nativa do Windows.
@@ -48,3 +50,7 @@ A interface abre automaticamente. Informe:
 - Usa `List<T>` em vez de `array +=` para evitar complexidade O(n²) na construção da lista de alvos
 - Timeouts configuráveis separadamente para comandos normais e disruptivos
 - Guard contra lista de alvos vazia antes de iniciar o deploy
+
+## Licença
+
+MIT — veja [LICENSE](LICENSE).

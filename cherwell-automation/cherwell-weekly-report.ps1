@@ -4,6 +4,8 @@
     gera um relatório em HTML e (opcional) monta o e-mail no Outlook.
 
 .DESCRIPTION
+    ATENÇÃO: script genérico, APENAS PARA TESTE E ESTUDO. Revise e adapte antes de qualquer uso em produção.
+
     Período analisado: os últimos N dias completos, sem contar o dia de referência.
     Exemplo: rodando na segunda 23/11 com -Days 7, o período vai de 16/11 00:00 até 22/11 23:59.
 

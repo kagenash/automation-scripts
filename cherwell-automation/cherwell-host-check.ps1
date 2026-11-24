@@ -3,6 +3,8 @@
     Testa se um host está online (ping ou porta TCP) e devolve o resultado como código de saída.
 
 .DESCRIPTION
+    ATENÇÃO: script genérico, APENAS PARA TESTE E ESTUDO. Revise e adapte antes de qualquer uso em produção.
+
     O Cherwell não lê texto de volta do script, só o código de saída.
     Use "Store Exit Code from Program" na One-Step e decida a próxima ação pelo valor:
         0 = online
