@@ -1,3 +1,5 @@
+🇧🇷 **Português** | 🇺🇸 [English](README.en.md)
+
 # cherwell-automation
 
 Kit de automações em PowerShell para o Cherwell Service Management (CSM): relatório semanal de chamados, respostas padrão, checagem de host e exportação via REST API. Os scripts são chamados por One-Step Actions (ação **Run a Program**) ou rodam sozinhos a partir de um CSV exportado.
@@ -81,11 +83,11 @@ Via REST API:
 
 ## Códigos de saída
 
-| Código | bridge-test / reply-template | host-check | weekly-report / api-export |
-|---|---|---|---|
-| 0 | OK | Online | OK |
-| 1 | — | Offline | Sem registros |
-| 2 | — | Erro (DNS) | Erro |
+| Código | bridge-test | reply-template | host-check | weekly-report / api-export |
+|---|---|---|---|---|
+| 0 | Log gravado | OK | Online | OK |
+| 1 | — | — | Offline | Sem registros |
+| 2 | Falha ao gravar o log | — | Erro (DNS) | Erro |
 
 ## Notas
 
@@ -93,5 +95,12 @@ Via REST API:
 - O e-mail abre para revisão por padrão; `-SendNow` só depois de validar o conteúdo
 - Em Scheduled Items a One-Step roda no servidor, então o "Run a Program" não enxerga scripts da máquina local
 - Cada login na REST API consome uma licença do CSM; o script faz logout no final
+- Se o limite de `-MaxPages` for atingido, o `cherwell-api-export.ps1` avisa que a exportação ficou incompleta
+- Em caso de erro na API, o script mostra também a resposta do Cherwell (no 5.1 a exceção sozinha diz só "(400) Bad Request")
 - A credencial da API é salva com `Export-Clixml` (criptografia DPAPI só no Windows, vinculada ao usuário)
+- Os scripts são genéricos, feitos para teste — ajuste caminhos, tokens e campos ao seu ambiente
 - Os dados de `exemplos/` são fictícios
+
+## Licença
+
+MIT — veja [LICENSE](LICENSE).

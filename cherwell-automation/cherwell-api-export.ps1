@@ -30,6 +30,8 @@
     .\cherwell-weekly-report.ps1 -InputPath ".\exports\api.csv" -DateCulture "en-US"
 #>
 
+# $CredentialPath é o caminho do arquivo, não a senha: o aviso do analisador é falso positivo.
+[Diagnostics.CodeAnalysis.SuppressMessageAttribute("PSAvoidUsingPlainTextForPassword", "CredentialPath")]
 [CmdletBinding(DefaultParameterSetName = "Buscar")]
 param(
     [Parameter(Mandatory = $true, ParameterSetName = "SalvarCredencial")]
@@ -216,13 +218,16 @@ try {
         $pageNumber++
     } while ($pageObjects.Count -gt 0 -and $collectedRows.Count -lt $totalRows -and $pageNumber -le $MaxPages)
 
-    # 6) Salva
+    if ($collectedRows.Count -lt $totalRows) {
+        Write-Warning "Exportação incompleta: $($collectedRows.Count) de $totalRows registros (limite de -MaxPages $MaxPages atingido). Aumente -MaxPages ou -PageSize."
+    }
+
     if ($collectedRows.Count -eq 0) {
-        Write-Output "Busca sem resultados."
+        Write-Output "Nenhum registro encontrado."
         $exitCode = 1
     }
     else {
-        $outputFolder = Split-Path -Path $OutputCsv -Parent
+        $outputFolder = Split-Path -Parent $OutputCsv
 
         if (-not [string]::IsNullOrWhiteSpace($outputFolder) -and -not (Test-Path -Path $outputFolder)) {
             New-Item -Path $outputFolder -ItemType Directory -Force | Out-Null
@@ -234,6 +239,13 @@ try {
 }
 catch {
     Write-Output "Erro: $($_.Exception.Message)"
+
+    # No PowerShell 5.1 a exceção só diz "(400) Bad Request"; o motivo real que o Cherwell
+    # devolve (ex.: "Invalid client_id", campo inválido no filtro) vem no corpo da resposta.
+    if ($_.ErrorDetails -and -not [string]::IsNullOrWhiteSpace($_.ErrorDetails.Message)) {
+        Write-Output "Resposta do Cherwell: $($_.ErrorDetails.Message)"
+    }
+
     $exitCode = 2
 }
 finally {

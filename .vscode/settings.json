@@ -48,6 +48,7 @@
         "editor.wordWrap": "on"
     },
     "cSpell.language": "en,pt-BR",
+    "cSpell.words": ["Cherwell", "CherwellAPI", "busObId", "busobid", "busobname", "fieldId", "Clixml", "DPAPI", "OAuth", "SAML", "psql", "shellcheck"],
 
     // ---- Terminal: PowerShell padrÃ£o, Git Bash disponÃ­vel ----
     "terminal.integrated.defaultProfile.windows": "PowerShell",

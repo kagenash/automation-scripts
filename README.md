@@ -55,10 +55,13 @@ automation-scripts/
 │   ├── cherwell-host-check.ps1
 │   ├── cherwell-reply-template.ps1
 │   ├── cherwell-weekly-report.ps1
+│   ├── LICENSE
+│   ├── README.en.md
 │   └── README.md
 ├── tests/
 │   └── test_syntax.ps1
 ├── LICENSE
+├── README.en.md
 └── README.md
 ```
 
